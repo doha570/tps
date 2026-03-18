@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaTech Consulting - Expertises & Offres</title>
+    <meta name="description" content="Découvrez les offres de NovaTech Consulting en cybersécurité, cloud et architecture web.">
+    <meta property="og:title" content="NovaTech Consulting - Expertises">
+    <meta property="og:type" content="website">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Details / Summary custom style */
+        .faq-container { max-width: 800px; margin: 0 auto; }
+        details {
+            background-color: var(--clr-surface);
+            border: 1px solid var(--clr-border);
+            border-radius: var(--radius);
+            margin-bottom: 1rem;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        details:hover { border-color: var(--clr-primary); }
+        summary {
+            padding: 1.5rem;
+            font-weight: 600;
+            font-family: var(--font-heading);
+            cursor: pointer;
+            list-style: none; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        summary::-webkit-details-marker { display: none; }
+        summary::after {
+            content: '+';
+            color: var(--clr-primary);
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+        details[open] summary::after { content: '-'; }
+        details p { padding: 0 1.5rem 1.5rem; color: var(--clr-text); }
+
+        /* Pricing table custom style */
+        .pricing-table-container {
+            overflow-x: auto;
+            margin-top: 3rem;
+            box-shadow: var(--shadow-md);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--clr-border);
+            background: var(--clr-surface);
+        }
+        .pricing-table { width: 100%; border-collapse: collapse; text-align: left; }
+        .pricing-table th, .pricing-table td { padding: 1.2rem; border-bottom: 1px solid var(--clr-border); }
+        .pricing-table thead th { background-color: var(--clr-primary); color: white; text-align: center; font-family: var(--font-heading); }
+        .pricing-table td { text-align: center; }
+        .pricing-table td:first-child, .pricing-table th:first-child { text-align: left; font-weight: 600; background-color: var(--clr-bg); }
+        .highlight-col { background-color: rgba(0, 86, 179, 0.05); }
+        [data-theme="dark"] .highlight-col { background-color: rgba(51, 154, 240, 0.05); }
+        .badge { background: var(--clr-secondary); color: white; padding: 0.2rem 0.5rem; border-radius: 20px; font-size: 0.7rem; margin-left: 8px; vertical-align: middle;}
+    </style>
+</head>
+<body>
+
+    <header class="main-header glass">
+        <div class="container header-container">
+            <a href="../index.html" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                NovaTech
+            </a>
+            <nav class="main-nav">
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="about.html">La Firme</a></li>
+                    <li><a href="services.html" class="active">Expertises</a></li>
+                    <li><a href="gallery.html">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><button class="theme-toggle">🌙</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-padding fade-in section-primary text-center">
+            <div class="container">
+                <h1 class="mb-1">Solutions d'Expertise</h1>
+                <p class="max-width-800 text-muted">Sécurisez vos opérations, migrez vers le Cloud en toute sérénité et accélérez votre R&D logicielle.</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container">
+                <div class="text-center mb-3">
+                    <h2>Détail de nos <span>Pratiques</span></h2>
+                    <p>Découvrez notre approche méthodique pour répondre à vos enjeux structurants.</p>
+                </div>
+                <div class="faq-container fade-in">
+                    <details open>
+                        <summary>Cybersécurité & Audit</summary>
+                        <p>Notre pôle sécurité (Red Team) simule des attaques de type APT pour évaluer la résilience de vos SI. Nous menons des audits de code, tests d'intrusion (pentest web, interne, externe) et assistons la mise en conformité (SecNumCloud, ISO 27001).</p>
+                    </details>
+                    <details>
+                        <summary>Architecture Cloud & DevOps</summary>
+                        <p>La migration de données "on-premise" vers AWS ou Google Cloud n'a jamais été aussi simple. Nous construisons des pipelines CI/CD Kubernetes sécurisés pour garantir des itérations de développement rapides tout en contrôlant les coûts (FinOps).</p>
+                    </details>
+                    <details>
+                        <summary>Ingénierie Logicielle / Systèmes Distribués</summary>
+                        <p>Nos ingénieurs développent en React, Node.js, Go et Python. Nous concevons le back-end de plateformes transactionnelles via une approche microservices, capable d'absorber des millions de requêtes via Kafka ou RabbitMQ.</p>
+                    </details>
+                    <details>
+                        <summary>Formation & Conseil IT</summary>
+                        <p>Nos collaborateurs hautement certifiés accompagnent vos équipes internes : ateliers d'architecture (DDD), sensibilisation au Phishing, best practices DevSecOps et revues critiques d'architecture.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding section-surface">
+            <div class="container">
+                <div class="text-center mb-3">
+                    <h2>Packs <span>Audit & Accompagnement</span></h2>
+                    <p>Des contrats de services (SLA) clairs et adaptés aux ETI et grands groupes.</p>
+                </div>
+                
+                <div class="pricing-table-container fade-in">
+                    <table class="pricing-table">
+                        <thead>
+                            <tr>
+                                <th>Prestation / Livrable</th>
+                                <th>Scan Basique<br><small>TPE / PME</small></th>
+                                <th class="highlight-col">Sécurité Pro <span class="badge">Recommandé</span><br><small>Scalability IT</small></th>
+                                <th>Enterprise CISO<br><small>Support 24/7</small></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tests d'intrusion (Nb de jours)</td>
+                                <td>2 jours</td>
+                                <td class="highlight-col">5 jours (Web + Interne)</td>
+                                <td>15 jours / an</td>
+                            </tr>
+                            <tr>
+                                <td>Rapport de vulnérabilité</td>
+                                <td>✅ (Standard)</td>
+                                <td class="highlight-col">✅ (+ Plan de remédiation)</td>
+                                <td>✅ (+ Présentation Comex)</td>
+                            </tr>
+                            <tr>
+                                <td>Support Architecture AWS/K8s</td>
+                                <td>❌ Non inclus</td>
+                                <td class="highlight-col" rowspan="2">Audit Infrastructure<br>+ Astreinte 8h/18h</td>
+                                <td rowspan="2">Gérance Complète (SRE)<br>Astreinte 24/7 (SLA 99.99%)</td>
+                            </tr>
+                            <tr>
+                                <td>Intervention Incident Cyber</td>
+                                <td>Devis spécifique</td>
+                            </tr>
+                            <tr>
+                                <td>Engagement de confidentialité (NDA)</td>
+                                <td colspan="3" class="text-italic clr-primary">Inclus d'office. Toutes nos données sont chiffrées selon les standards militaires AES-256.</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td><a href="contact.html" class="btn btn-secondary">Contactez-nous</a></td>
+                                <td class="highlight-col"><a href="contact.html" class="btn btn-primary">Réserver Audit</a></td>
+                                <td><a href="contact.html" class="btn btn-secondary">Demander Devis</a></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>NovaTech Consulting</h3>
+                    <p>Experts en transformation digitale et résilience informatique.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                        <a href="#" class="social-link" aria-label="Twitter">tw</a>
+                        <a href="#" class="social-link" aria-label="GitHub">gh</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Plan du site</h3>
+                    <ul>
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="about.html">La Firme</a></li>
+                        <li><a href="gallery.html">Réalisations</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>📍 42 Avenue de la Tech, 75008 Paris</p>
+                    <p>📩 <a href="mailto:contact@novatech.fr">contact@novatech.fr</a></p>
+                    <p>📞 +33 1 80 00 00 00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NovaTech Consulting. Tous droits réservés. <a href="#">Mentions légales</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaTech Consulting - Innovation Digitale</title>
+    <meta name="description" content="NovaTech Consulting : Votre partenaire en transformation digitale, cybersécurité et systèmes distribués.">
+    <meta property="og:title" content="NovaTech Consulting">
+    <meta property="og:description" content="Innovation digitale au service de votre entreprise.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.novatech-consulting.com">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="main-header glass">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                NovaTech
+            </a>
+            <nav class="main-nav">
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="pages/about.html">La Firme</a></li>
+                    <li><a href="pages/services.html">Expertises</a></li>
+                    <li><a href="pages/gallery.html">Réalisations</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                    <li>
+                        <button class="theme-toggle" aria-label="Changer de thème">🌙</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero fade-in">
+            <div class="hero-bg">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1920">
+                    <source media="(min-width: 768px)" srcset="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1024">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=640" alt="Innovation IT Concept">
+                </picture>
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1>Innovation digitale au service de votre <span>entreprise</span>.</h1>
+                <p>Nous transformons des environnements IT complexes en leviers de croissance. Cybersécurité, Cloud Architecture et Systèmes Distribués de pointe.</p>
+                <div class="hero-cta">
+                    <a href="pages/services.html" class="btn btn-primary">Découvrir nos expertises</a>
+                    <a href="pages/contact.html" class="btn btn-white-outline">Demander un devis</a>
+                </div>
+            </div>
+        </section>
+
+      
+        <section class="section-padding fade-in">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h2>Nos Domaines <span>d'Intervention</span></h2>
+                    <p>Des stratégies technologiques robustes pour sécuriser l'avenir de votre SI.</p>
+                </div>
+                <div class="grid-3">
+                    <article class="service-card">
+                        <div class="service-icon">🔒</div>
+                        <h3>Cybersécurité</h3>
+                        <p>Audits de vulnérabilité, sécurisation des endpoints et test d'intrusion avancés pour protéger vos actifs critiques.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">☁️</div>
+                        <h3>Cloud & Déploiement</h3>
+                        <p>Migration cloud sécurisée (AWS, Azure) et orchestration Kubernetes pour une scalabilité infinie.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">⚙️</div>
+                        <h3>Systèmes Distribués</h3>
+                        <p>Conception d'architectures micro-services résilientes assurant une haute disponibilité de vos datas.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding section-primary">
+            <div class="container fade-in">
+                <div class="text-center mb-3">
+                    <h2>Ce qu'ils disent de NovaTech</h2>
+                </div>
+                
+                <div class="carousel-container carousel-glass">
+                    <div class="carousel-slide active">
+                        <p>"L'intervention de NovaTech a permis de sécuriser notre infrastructure après une cyberattaque majeure. Leur expertise en réseau distribué est inestimable."</p>
+                        <h4>Jean-Baptiste Renault</h4>
+                        <span class="text-muted">CTO, FinBank Europe</span>
+                    </div>
+                    <div class="carousel-slide">
+                        <p>"La migration de nos serveurs on-premise vers une architecture cloud native s'est faite sans la moindre interruption de service grâce à leur méthodologie."</p>
+                        <h4>Alice Lemaire</h4>
+                        <span class="text-muted">Directrice IT, SantéTech</span>
+                    </div>
+                    <div class="carousel-slide">
+                        <p>"Des consultants de très haut niveau, capables de vulgariser des concepts complexes auprès de notre comité de direction."</p>
+                        <h4>Thomas Dubois</h4>
+                        <span class="text-muted">CEO, Logiprotect</span>
+                    </div>
+                    <div class="carousel-controls">
+                        <div class="carousel-dot active"></div>
+                        <div class="carousel-dot"></div>
+                        <div class="carousel-dot"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>NovaTech Consulting</h3>
+                    <p>Experts en transformation digitale et résilience informatique.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                        <a href="#" class="social-link" aria-label="Twitter">tw</a>
+                        <a href="#" class="social-link" aria-label="GitHub">gh</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Plan du site</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="pages/about.html">La Firme</a></li>
+                        <li><a href="pages/services.html">Expertises</a></li>
+                        <li><a href="pages/gallery.html">Galerie</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>📍 42 Avenue de la Tech, 75008 Paris</p>
+                    <p>📩 <a href="mailto:contact@novatech.fr">contact@novatech.fr</a></p>
+                    <p>📞 +33 1 80 00 00 00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NovaTech Consulting. Tous droits réservés. <a href="#">Mentions légales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

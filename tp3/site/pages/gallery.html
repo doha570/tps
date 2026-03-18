@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaTech Consulting - Portfolio & Projets</title>
+    <meta name="description" content="Découvrez nos derniers cas clients : Dashboards Big Data, Architectures Cloud, Audits de Sécurité.">
+    <meta property="og:title" content="NovaTech Consulting - Réalisations">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="main-header glass">
+        <div class="container header-container">
+            <a href="../index.html" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                NovaTech
+            </a>
+            <nav class="main-nav">
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="about.html">La Firme</a></li>
+                    <li><a href="services.html">Expertises</a></li>
+                    <li><a href="gallery.html" class="active">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><button class="theme-toggle">🌙</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-padding fade-in section-primary text-center">
+            <div class="container">
+                <h1 class="mb-1">Cas d'Usage & <span>Projets</span></h1>
+                <p class="max-width-800 text-muted">Découvrez comment nous avons répondu aux enjeux de résilience de nos clients institutionnels.</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container fade-in">
+                <div class="projects-grid">
+                    
+                    <div class="project-card">
+                        <picture>
+                            <source media="(min-width: 1024px)" srcset="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80">
+                            <source media="(min-width: 768px)" srcset="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80" alt="Dashboard Big Analytics" loading="lazy">
+                        </picture>
+                        <div class="project-overlay">
+                            <div><span class="project-tag">Data / SI</span></div>
+                            <h3>Plateforme SOC Analytics</h3>
+                            <p>Implémentation d'un ELK stack pour l'analyse de logs en temps réel (Banque Française).</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img 
+                            srcset="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=400&q=80 400w,
+                                    https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80 800w,
+                                    https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80 1200w"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                            src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" 
+                            alt="Data center server racks" loading="lazy">
+                        <div class="project-overlay">
+                            <div><span class="project-tag">Cloud</span></div>
+                            <h3>Migration Kubernetes</h3>
+                            <p>Passage d'une architecture monolithique vers des microservices K8s pour un pure-player e-commerce.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="https://images.unsplash.com/photo-1555421689-d68471e189f2?auto=format&fit=crop&w=800&q=80">
+                            <img src="https://images.unsplash.com/photo-1555421689-d68471e189f2?auto=format&fit=crop&w=400&q=80" alt="Interface SaaS" loading="lazy">
+                        </picture>
+                        <div class="project-overlay">
+                            <div><span class="project-tag">SecDevOps</span></div>
+                            <h3>Sécurisation d'un portail B2B</h3>
+                            <p>Audit de sécurité complet et implémentation Zero Trust (React/Node.js).</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="https://images.unsplash.com/photo-1618761714954-0b8cd0026356?auto=format&fit=crop&w=800&q=80">
+                            <img src="https://images.unsplash.com/photo-1618761714954-0b8cd0026356?auto=format&fit=crop&w=400&q=80" alt="Architecture schéma" loading="lazy">
+                        </picture>
+                        <div class="project-overlay">
+                            <div><span class="project-tag">Ingénierie</span></div>
+                            <h3>Broker IoT Industriel</h3>
+                            <p>Conception d'un bus de messagerie haute perf traitant 5M msgs/sec.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>NovaTech Consulting</h3>
+                    <p>Experts en transformation digitale et résilience informatique.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                        <a href="#" class="social-link" aria-label="Twitter">tw</a>
+                        <a href="#" class="social-link" aria-label="GitHub">gh</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Plan du site</h3>
+                    <ul>
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="about.html">La Firme</a></li>
+                        <li><a href="services.html">Expertises</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>📍 42 Avenue de la Tech, 75008 Paris</p>
+                    <p>📩 <a href="mailto:contact@novatech.fr">contact@novatech.fr</a></p>
+                    <p>📞 +33 1 80 00 00 00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NovaTech Consulting. Tous droits réservés. <a href="#">Mentions légales</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>
